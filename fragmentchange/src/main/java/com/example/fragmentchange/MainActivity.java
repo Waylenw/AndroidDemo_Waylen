@@ -67,6 +67,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         tab3.setSelected(index == 2);
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        //判断当前的Fragment是否为空，不为空则隐藏
         if (null != mCurrentFrgment) {
             ft.hide(mCurrentFrgment);
         }
@@ -84,6 +85,4 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         }
         ft.commitAllowingStateLoss();
     }
-
-
 }
