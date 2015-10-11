@@ -4,6 +4,10 @@ android一些案例，以及博客案例等。<br/>
 
  主要是recyclerView的操作和使用
 
-##[fragmentchang模块]
+##fragmentchang模块
   fragment切换的源码
-  [Blog](http://waylenw.github.io/Android/android-fragment-change-one/)
+  
+  [Blog链接](http://waylenw.github.io/Android/android-fragment-change-one/)
+  
+  ![](https://raw.githubusercontent.com/Waylenw/AndroidDemo_Waylen/master/screen/fragmentchange.gif)
+ 
