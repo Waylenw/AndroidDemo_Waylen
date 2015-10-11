@@ -42,14 +42,12 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     }
 
     private void initFragment() {
-        FragmentTransaction frgmentTransation = getSupportFragmentManager().beginTransaction();
         fragmentArrayList = new ArrayList<Fragment>(3);
         fragmentArrayList.add(new Tab1Fragment());
         fragmentArrayList.add(new Tab2Fragment());
         fragmentArrayList.add(new Tab3Fragment());
 
         tab1.setSelected(true);
-
         changeTab(0);
     }
 
@@ -71,18 +69,21 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         if (null != mCurrentFrgment) {
             ft.hide(mCurrentFrgment);
         }
+        //先根据Tag从FragmentTransaction事物获取之前添加的Fragment
         Fragment fragment = getSupportFragmentManager().findFragmentByTag(fragmentArrayList.get(currentIndex).getClass().getName());
 
         if (null == fragment) {
+            //如fragment为空，则之前未添加此Fragment。便从集合中取出
             fragment = fragmentArrayList.get(index);
         }
         mCurrentFrgment = fragment;
 
+        //判断此Fragment是否已经添加到FragmentTransaction事物中
         if (!fragment.isAdded()) {
             ft.add(R.id.fragment, fragment, fragment.getClass().getName());
         } else {
             ft.show(fragment);
         }
-        ft.commitAllowingStateLoss();
+        ft.commit();
     }
 }
