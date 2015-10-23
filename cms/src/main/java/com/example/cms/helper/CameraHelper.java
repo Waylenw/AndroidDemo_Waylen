@@ -6,12 +6,13 @@ import android.hardware.Camera;
 import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 
 import java.io.IOException;
 
 /**
- * Created 王祥磊 on 2015/10/22.
+ * 摄像头帮助类
+ *
+ * Created waylenw on 2015/10/22.
  */
 public class CameraHelper {
 
@@ -223,14 +224,14 @@ public class CameraHelper {
      *关闭闪光灯
      */
     private void turnOffFlashLight(){
-        DeviceHelper.turnLightOn(mCamera,Camera.Parameters.FLASH_MODE_OFF);
+        DeviceHelper.turnLightForAction(mCamera, Camera.Parameters.FLASH_MODE_OFF);
 
     }
     /***
      * 开启闪光灯
      */
     private void turnOnFlashLight(){
-        DeviceHelper.turnLightOn(mCamera,Camera.Parameters.FLASH_MODE_TORCH);
+        DeviceHelper.turnLightForAction(mCamera, Camera.Parameters.FLASH_MODE_TORCH);
     }
 
 }

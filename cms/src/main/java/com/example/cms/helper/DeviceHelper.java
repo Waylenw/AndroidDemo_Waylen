@@ -5,16 +5,18 @@ import android.hardware.Camera;
 import java.util.List;
 
 /**
- * Created 王祥磊 on 2015/10/23.
+ * 设备帮助类
+ *
+ * Created waylenw on 2015/10/23.
  */
 public class DeviceHelper {
     /**
-     * 开启闪光灯
+     * 操作闪光灯
      *
      * @param mCamera
      * @param action Camera.Parameters.FLASH_MODE_TORCH 或者 Camera.Parameters.FLASH_MODE_OFF
      */
-    public static void turnLightOn(Camera mCamera, String action) {
+    public static void turnLightForAction(Camera mCamera, String action) {
         if (null == mCamera) {
             return;
 
