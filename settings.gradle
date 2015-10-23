@@ -1,1 +1,1 @@
-include ':recyclerview', ':fragmentchange'
+include ':recyclerview', ':fragmentchange', ':panel', ':audioplear', ':cms'

@@ -10,7 +10,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/audioplear" />
+            <option value="$PROJECT_DIR$/cms" />
             <option value="$PROJECT_DIR$/fragmentchange" />
+            <option value="$PROJECT_DIR$/panel" />
             <option value="$PROJECT_DIR$/recyclerview" />
           </set>
         </option>
