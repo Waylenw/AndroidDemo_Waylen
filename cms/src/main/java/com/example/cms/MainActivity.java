@@ -29,15 +29,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mPreview = (CameraPreview) findViewById(R.id.camera_preview);
         cameraHelper = CameraHelper.init(mPreview.getHolder(), mCamera);
         findViewById(R.id.btn_camera_change).setOnClickListener(this);
+        findViewById(R.id.btn_cameraflash_change).setOnClickListener(this);
+
 
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btn_camera_change:
                 Log.i("onclick", "按钮");
                 cameraHelper.changCamera();
+                break;
+            case R.id.btn_cameraflash_change:
+                Log.i("onclick", "按钮");
+                cameraHelper.changeFlashLight();
                 break;
 
         }

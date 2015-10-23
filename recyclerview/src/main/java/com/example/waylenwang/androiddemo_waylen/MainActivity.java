@@ -10,12 +10,10 @@ import android.support.v7.widget.RecyclerView;
  * RecyclerView的Demo
  *
  * @author Waylenwang
- *
  */
 public class MainActivity extends Activity {
     private RecyclerView recyclerView;
     private RecyclerView recyclerView1;
-
 
 
     @Override
@@ -24,14 +22,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-        recyclerView=(RecyclerView)findViewById(R.id.main_recyclerView);
-        recyclerView1=(RecyclerView)findViewById(R.id.main_recyclerView1);
+        recyclerView = (RecyclerView) findViewById(R.id.main_recyclerView);
+        recyclerView1 = (RecyclerView) findViewById(R.id.main_recyclerView1);
 
-        MyRecyclerVeiwAdapter recyclerVeiwAdapter=new MyRecyclerVeiwAdapter(getApplication());
-        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+        MyRecyclerVeiwAdapter recyclerVeiwAdapter = new MyRecyclerVeiwAdapter(getApplication());
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerView.setAdapter(recyclerVeiwAdapter);
 
-        MyRecyclerVeiwTwoAdapter recyclerVeiwAdapter2=new MyRecyclerVeiwTwoAdapter(getApplication());
+        MyRecyclerVeiwTwoAdapter recyclerVeiwAdapter2 = new MyRecyclerVeiwTwoAdapter(getApplication());
         recyclerView1.setLayoutManager(new LinearLayoutManager(this));
         recyclerView1.setAdapter(recyclerVeiwAdapter2);
     }

@@ -181,7 +181,7 @@ public class CameraHelper {
      * @param context
      * @return
      */
-    public static int getPreviewDegree(Activity context) {
+    private static int getPreviewDegree(Activity context) {
         // 获得手机的方向
         int rotation = context.getWindowManager().getDefaultDisplay()
                 .getRotation();
@@ -202,6 +202,35 @@ public class CameraHelper {
                 break;
         }
         return degree;
+    }
+
+    private int mFlashLightStatus=0;
+
+    /***
+     *切换闪光灯
+     */
+    public void changeFlashLight(){
+        if(mFlashLightStatus==0){
+            turnOnFlashLight();
+            mFlashLightStatus=1;
+        }else{
+            turnOffFlashLight();
+            mFlashLightStatus=0;
+        }
+    }
+
+    /***
+     *关闭闪光灯
+     */
+    private void turnOffFlashLight(){
+        DeviceHelper.turnLightOn(mCamera,Camera.Parameters.FLASH_MODE_OFF);
+
+    }
+    /***
+     * 开启闪光灯
+     */
+    private void turnOnFlashLight(){
+        DeviceHelper.turnLightOn(mCamera,Camera.Parameters.FLASH_MODE_TORCH);
     }
 
 }
