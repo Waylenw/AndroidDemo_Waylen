@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/fragmentchange" />
             <option value="$PROJECT_DIR$/panel" />
             <option value="$PROJECT_DIR$/recyclerview" />
+            <option value="$PROJECT_DIR$/tintingclipping" />
           </set>
         </option>
       </GradleProjectSettings>
