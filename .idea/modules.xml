@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidDemo_Waylen.git.iml" filepath="$PROJECT_DIR$/AndroidDemo_Waylen.git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidDemo_Waylen.iml" filepath="$PROJECT_DIR$/AndroidDemo_Waylen.iml" />
       <module fileurl="file://$PROJECT_DIR$/audioplear/audioplear.iml" filepath="$PROJECT_DIR$/audioplear/audioplear.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentchange/fragmentchange.iml" filepath="$PROJECT_DIR$/fragmentchange/fragmentchange.iml" />
-      <module fileurl="file://$PROJECT_DIR$/panel/panel.iml" filepath="$PROJECT_DIR$/panel/panel.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tintingclipping/tintingclipping.iml" filepath="$PROJECT_DIR$/tintingclipping/tintingclipping.iml" />
     </modules>
