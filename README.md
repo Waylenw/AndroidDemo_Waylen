@@ -3,6 +3,7 @@ android一些案例，以及博客案例等。<br/>
 ##[reclyclerView模块](https://github.com/waylen505/AndroidDemo_Waylen/tree/master/recyclerview/src/main/java/com/example/waylenwang/androiddemo_waylen)
 
  主要是recyclerView的操作和使用
+ ![](https://raw.githubusercontent.com/Waylenw/AndroidDemo_Waylen/master/screen/recyclerView.gif)
 
 ##fragmentchang模块
   fragment切换的源码
