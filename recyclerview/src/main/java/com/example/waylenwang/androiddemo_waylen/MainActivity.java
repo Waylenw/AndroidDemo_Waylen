@@ -1,19 +1,19 @@
 package com.example.waylenwang.androiddemo_waylen;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
+import com.example.waylenwang.androiddemo_waylen.activity.GridRecyclerViewActivity;
+import com.example.waylenwang.androiddemo_waylen.activity.LineRecyclerViewActivity;
 
 /**
  * RecyclerView的Demo
  *
  * @author Waylenwang
  */
-public class MainActivity extends Activity {
-    private RecyclerView recyclerView;
-    private RecyclerView recyclerView1;
+public class MainActivity extends Activity implements View.OnClickListener{
 
 
     @Override
@@ -22,17 +22,18 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-        recyclerView = (RecyclerView) findViewById(R.id.main_recyclerView);
-        recyclerView1 = (RecyclerView) findViewById(R.id.main_recyclerView1);
-
-        MyRecyclerVeiwAdapter recyclerVeiwAdapter = new MyRecyclerVeiwAdapter(getApplication());
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
-        recyclerView.setAdapter(recyclerVeiwAdapter);
-
-        MyRecyclerVeiwTwoAdapter recyclerVeiwAdapter2 = new MyRecyclerVeiwTwoAdapter(getApplication());
-        recyclerView1.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView1.setAdapter(recyclerVeiwAdapter2);
     }
 
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.lineBtn:
+                startActivity(new Intent(getApplicationContext(), LineRecyclerViewActivity.class));
+                break;
+            case R.id.gridBtn:
+                startActivity(new Intent(getApplicationContext(), GridRecyclerViewActivity.class));
+                break;
+        }
+    }
 }

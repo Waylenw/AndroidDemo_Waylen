@@ -1,12 +1,13 @@
-package com.example.waylenwang.androiddemo_waylen;
+package com.example.waylenwang.androiddemo_waylen.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.waylenwang.androiddemo_waylen.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +17,13 @@ import java.util.List;
  * <p/>
  * Created by Waylenwang on 2015/8/20.
  */
-public class MyRecyclerVeiwAdapter extends RecyclerView.Adapter<MyRecyclerVeiwAdapter.MyViewHolder> {
+public class MyRecyclerVeiwTwoAdapter extends RecyclerView.Adapter<MyRecyclerVeiwTwoAdapter.MyViewHolder> {
 
     List<String> list=new ArrayList<String>();
 
     private Context context;
-    public  MyRecyclerVeiwAdapter(Context context){
-        for(int i=0;i<10;i++){
+    public MyRecyclerVeiwTwoAdapter(Context context){
+        for(int i=0;i<100;i++){
             list.add("列表:"+i);
         }
         this.context=context;
@@ -37,7 +38,7 @@ public class MyRecyclerVeiwAdapter extends RecyclerView.Adapter<MyRecyclerVeiwAd
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item, parent,
+        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item2, parent,
                 false));
         return holder;
     }
@@ -46,8 +47,6 @@ public class MyRecyclerVeiwAdapter extends RecyclerView.Adapter<MyRecyclerVeiwAd
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         holder.tv.setText(list.get(position));
-        LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(200,100);
-        holder.tv.setLayoutParams(layoutParams);
 
     }
 

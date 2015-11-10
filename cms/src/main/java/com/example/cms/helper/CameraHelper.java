@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  * 摄像头帮助类
- *
+ * <p>
  * Created waylenw on 2015/10/22.
  */
 public class CameraHelper {
@@ -117,7 +117,7 @@ public class CameraHelper {
             changeCameraForFacing(camera_front_index);
             Log.i("tag", "后置切换前置1");
             return;
-        } else if (cameraPosition == 0 && camera_back_index != -1){
+        } else if (cameraPosition == 0 && camera_back_index != -1) {
             changeCameraForFacing(camera_back_index);
             Log.i("tag", "前置切换后置1");
             return;
@@ -129,12 +129,12 @@ public class CameraHelper {
             Camera.getCameraInfo(i, cameraInfo);//得到第i个摄像头的信息
             if (cameraPosition == 1 && cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
                 //后置切换前置
-                camera_front_index=i;
+                camera_front_index = i;
                 changeCameraForFacing(i);
-                Log.i("tag","后置切换前置");
+                Log.i("tag", "后置切换前置");
                 break;
             } else if (cameraPosition == 0 && cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK) {
-                camera_back_index=i;
+                camera_back_index = i;
                 changeCameraForFacing(i);
                 Log.i("tag", "前置切换后置");
                 break;
@@ -168,10 +168,10 @@ public class CameraHelper {
         }
 
         //更改当前摄像头的标注
-        if(cameraPosition==1){
-            cameraPosition=0;
-        }else{
-            cameraPosition=1;
+        if (cameraPosition == 1) {
+            cameraPosition = 0;
+        } else {
+            cameraPosition = 1;
         }
     }
 
@@ -205,32 +205,33 @@ public class CameraHelper {
         return degree;
     }
 
-    private int mFlashLightStatus=0;
+    private int mFlashLightStatus = 0;
 
     /***
-     *切换闪光灯
+     * 切换闪光灯
      */
-    public void changeFlashLight(){
-        if(mFlashLightStatus==0){
+    public void changeFlashLight() {
+        if (mFlashLightStatus == 0) {
             turnOnFlashLight();
-            mFlashLightStatus=1;
-        }else{
+            mFlashLightStatus = 1;
+        } else {
             turnOffFlashLight();
-            mFlashLightStatus=0;
+            mFlashLightStatus = 0;
         }
     }
 
     /***
-     *关闭闪光灯
+     * 关闭闪光灯
      */
-    private void turnOffFlashLight(){
+    private void turnOffFlashLight() {
         DeviceHelper.turnLightForAction(mCamera, Camera.Parameters.FLASH_MODE_OFF);
 
     }
+
     /***
      * 开启闪光灯
      */
-    private void turnOnFlashLight(){
+    private void turnOnFlashLight() {
         DeviceHelper.turnLightForAction(mCamera, Camera.Parameters.FLASH_MODE_TORCH);
     }
 

@@ -2,16 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/main_recyclerView"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/main_recyclerView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/lineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="listView效果"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/gridBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView效果"
+        android:onClick="onClick"
+        />
+
 
 </LinearLayout>
