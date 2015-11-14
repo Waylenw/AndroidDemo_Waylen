@@ -13,7 +13,7 @@ import com.example.waylenwang.androiddemo_waylen.activity.LineRecyclerViewActivi
  *
  * @author Waylenwang
  */
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends Activity implements View.OnClickListener {
 
 
     @Override
@@ -22,12 +22,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
 
 
+
     }
 
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.lineBtn:
                 startActivity(new Intent(getApplicationContext(), LineRecyclerViewActivity.class));
                 break;
