@@ -1,1 +1,1 @@
-include ':recyclerview', ':fragmentchange', ':audioplear', ':cms', ':tintingclipping', ':designsupport'
+include ':recyclerview', ':fragmentchange', ':audioplear', ':cms', ':tintingclipping', ':designsupport', ':aysntasktest'

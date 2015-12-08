@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidDemo_Waylen.iml" filepath="$PROJECT_DIR$/AndroidDemo_Waylen.iml" />
       <module fileurl="file://$PROJECT_DIR$/audioplear/audioplear.iml" filepath="$PROJECT_DIR$/audioplear/audioplear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aysntasktest/aysntasktest.iml" filepath="$PROJECT_DIR$/aysntasktest/aysntasktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/designsupport/designsupport.iml" filepath="$PROJECT_DIR$/designsupport/designsupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentchange/fragmentchange.iml" filepath="$PROJECT_DIR$/fragmentchange/fragmentchange.iml" />
