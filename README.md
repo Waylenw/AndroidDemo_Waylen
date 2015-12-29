@@ -13,6 +13,6 @@ android一些案例，以及博客案例等。<br/>
   
   ![](https://raw.githubusercontent.com/Waylenw/AndroidDemo_Waylen/master/screen/fragmentchange.gif)
   
- ## Rxjava模块
+ ##Rxjava模块
  [Rxjava-sample](https://github.com/Waylenw/AndroidDemo_Waylen/blob/master/rxjava/src/main/java/com/example/rxjava/RxJavaHelper.java)
  
