@@ -12,4 +12,7 @@ android一些案例，以及博客案例等。<br/>
   [Blog链接](http://waylenw.github.io/Android/android-fragment-change-one/)
   
   ![](https://raw.githubusercontent.com/Waylenw/AndroidDemo_Waylen/master/screen/fragmentchange.gif)
+  
+ ## Rxjava模块
+ [Rxjava-sample](https://github.com/Waylenw/AndroidDemo_Waylen/blob/master/rxjava/src/main/java/com/example/rxjava/RxJavaHelper.java)
  
