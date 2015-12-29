@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/designsupport" />
             <option value="$PROJECT_DIR$/fragmentchange" />
             <option value="$PROJECT_DIR$/recyclerview" />
+            <option value="$PROJECT_DIR$/rxjava" />
             <option value="$PROJECT_DIR$/tintingclipping" />
           </set>
         </option>
