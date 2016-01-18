@@ -17,12 +17,12 @@ import java.util.List;
  * <p/>
  * Created by Waylenwang on 2015/8/20.
  */
-public class MyRecyclerVeiwTwoAdapter extends RecyclerView.Adapter<MyRecyclerVeiwTwoAdapter.MyViewHolder> {
+public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyViewHolder> {
 
     List<String> list=new ArrayList<String>();
 
     private Context context;
-    public MyRecyclerVeiwTwoAdapter(Context context){
+    public ListViewAdapter(Context context){
         for(int i=0;i<100;i++){
             list.add("列表:"+i);
         }

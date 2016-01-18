@@ -6,8 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.example.waylenwang.androiddemo_waylen.R;
 
@@ -19,12 +17,12 @@ import java.util.List;
  * <p/>
  * Created by Waylenwang on 2015/8/20.
  */
-public class GridRecyclerVeiwAdapter extends RecyclerView.Adapter<GridRecyclerVeiwAdapter.MyViewHolder> {
+public class GridVeiwAdapter extends RecyclerView.Adapter<GridVeiwAdapter.MyViewHolder> {
 
     List<String> list=new ArrayList<String>();
 
     private Context context;
-    public GridRecyclerVeiwAdapter(Context context){
+    public GridVeiwAdapter(Context context){
         for(int i=0;i<100;i++){
             list.add("列表:"+i);
         }
