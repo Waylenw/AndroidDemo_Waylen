@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidDemo_Waylen.git.iml" filepath="$PROJECT_DIR$/AndroidDemo_Waylen.git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidDemo_Waylen.iml" filepath="$PROJECT_DIR$/AndroidDemo_Waylen.iml" />
       <module fileurl="file://$PROJECT_DIR$/audioplear/audioplear.iml" filepath="$PROJECT_DIR$/audioplear/audioplear.iml" />
       <module fileurl="file://$PROJECT_DIR$/aysntasktest/aysntasktest.iml" filepath="$PROJECT_DIR$/aysntasktest/aysntasktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms/cms.iml" filepath="$PROJECT_DIR$/cms/cms.iml" />
