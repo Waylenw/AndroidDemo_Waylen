@@ -8,7 +8,7 @@
         android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/textView"
+        android:id="@+id/imageView"
         android:gravity="center"
         android:background="@mipmap/a"
         android:layout_gravity="center_horizontal" />

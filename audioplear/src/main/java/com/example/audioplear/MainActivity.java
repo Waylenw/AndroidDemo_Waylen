@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.Random;
+
 public class MainActivity extends Activity implements View.OnClickListener {
     private MediaPlayer player;
     private  SoundPool soundPool;
@@ -22,12 +24,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
          soundPool = new SoundPool(12, 0,5);
         AudioManager mgr = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         mgr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-
-
-
-
-
+        mgr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        mgr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
     }
+    Runnable runnable=new Runnable(){
+
+
+        @Override
+        public void run() {
+
+        }
+    };
+
 
     @Override
     public void onClick(View v) {

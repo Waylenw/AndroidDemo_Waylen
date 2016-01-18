@@ -7,20 +7,42 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/lineBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="listView效果"
-        android:onClick="onClick"
-        />
-    <Button
-        android:id="@+id/gridBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GridView效果"
-        android:onClick="onClick"
-        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/lineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="listView效果"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/gridBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GridView效果"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/flowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="瀑布流效果"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        />
 
 </LinearLayout>

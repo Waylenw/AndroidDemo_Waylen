@@ -38,7 +38,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyView
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item2, parent,
+        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item_list_view, parent,
                 false));
         return holder;
     }
@@ -47,6 +47,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyView
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         holder.tv.setText(list.get(position));
+
 
     }
 

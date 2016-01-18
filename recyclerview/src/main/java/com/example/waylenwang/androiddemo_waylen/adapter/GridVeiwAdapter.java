@@ -38,7 +38,7 @@ public class GridVeiwAdapter extends RecyclerView.Adapter<GridVeiwAdapter.MyView
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item, parent,
+        MyViewHolder holder = new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item_grid_view, parent,
                 false));
         return holder;
     }
@@ -46,7 +46,7 @@ public class GridVeiwAdapter extends RecyclerView.Adapter<GridVeiwAdapter.MyView
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 //        LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(200,100);
-//        holder.tv.setLayoutParams(layoutParams);
+//        holder.imageView.setLayoutParams(layoutParams);
 
     }
 
@@ -56,7 +56,7 @@ public class GridVeiwAdapter extends RecyclerView.Adapter<GridVeiwAdapter.MyView
 
         public MyViewHolder(View view) {
             super(view);
-            tv = (ImageView) view.findViewById(R.id.textView);
+            tv = (ImageView) view.findViewById(R.id.imageView);
         }
     }
 }
