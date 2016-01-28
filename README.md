@@ -14,7 +14,7 @@ android一些案例，以及博客案例等。<br/>
   ![](https://raw.githubusercontent.com/Waylenw/AndroidDemo_Waylen/master/screen/fragmentchange.gif)
 
 ##imgfitdemo模块
- 图片拉伸适配
+ 图片拉伸适配<br>
  [Blog链接](http://waylenw.github.io/Android/android-fit-screen-img/)
   
 ##Rxjava模块
