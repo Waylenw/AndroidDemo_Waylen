@@ -20,7 +20,7 @@ import com.example.waylenwang.androiddemo_waylen.adapter.ListViewAdapter;
  *
  * @author Waylenwang
  */
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends Activity {
     private GridVeiwAdapter gridAdapter;
     private ListViewAdapter listAdapter;
     private FlowViewAdapter flowViewAdapter;
@@ -48,15 +48,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab.getPosition() == 0) {
+                if (tab.getPosition() == 0) {//ListView效果
                     recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
                     recyclerView.setAdapter(listAdapter);
                 }
-                if (tab.getPosition() == 1) {
+                if (tab.getPosition() == 1) {//GridView效果
                     recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 3));
                     recyclerView.setAdapter(gridAdapter);
                 }
-                if (tab.getPosition() == 2) {
+                if (tab.getPosition() == 2) {//Flow效果
                     //StaggeredGridLayoutManager.VERTICAL此处表示有多少列
                     recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
                     recyclerView.setAdapter(flowViewAdapter);
@@ -78,25 +78,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
         recyclerView.setAdapter(listAdapter);
 
 
-    }
-
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.lineBtn:
-                recyclerView.setLayoutManager(new LinearLayoutManager(this));
-                recyclerView.setAdapter(listAdapter);
-                break;
-            case R.id.gridBtn:
-                recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
-                recyclerView.setAdapter(gridAdapter);
-                break;
-            case R.id.flowBtn:
-                //StaggeredGridLayoutManager.VERTICAL此处表示有多少列
-                recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-                recyclerView.setAdapter(flowViewAdapter);
-                break;
-        }
     }
 }

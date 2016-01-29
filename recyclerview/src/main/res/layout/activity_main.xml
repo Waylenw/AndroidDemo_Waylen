@@ -14,40 +14,7 @@
         android:layout_height="wrap_content"
         app:tabBackground="@color/colorPrimary"
         app:tabIndicatorColor="@android:color/white"
-        app:tabSelectedTextColor="@android:color/white"
-        app:tabTextColor="@android:color/black" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:visibility="gone">
-
-        <Button
-            android:id="@+id/lineBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onClick"
-            android:text="listView效果" />
-
-        <Button
-            android:id="@+id/gridBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onClick"
-            android:text="GridView效果" />
-
-        <Button
-            android:id="@+id/flowBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onClick"
-            android:text="瀑布流效果" />
-    </LinearLayout>
+        app:tabSelectedTextColor="@android:color/white" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_recyclerView"
