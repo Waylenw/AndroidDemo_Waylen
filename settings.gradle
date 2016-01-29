@@ -1,1 +1,1 @@
-include ':recyclerview', ':fragmentchange', ':audioplear', ':cms', ':tintingclipping', ':designsupport', ':aysntasktest', ':rxjava','imgfitdemo'
+include ':recyclerview', ':fragmentchange', ':audioplear', ':cms', ':tintingclipping', ':designsupport', ':aysntasktest', ':rxjava', ':fragmentchange2','imgfitdemo'
