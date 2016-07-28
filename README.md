@@ -22,6 +22,6 @@ android一些案例，以及博客案例等。<br/>
  [Blog链接](http://waylenw.github.io/Android/android-fit-screen-img/)<br/>
  
 # Rxjava模块
- Rxjava的实例代码
+ Rxjava的实例代码<br/>
  [Rxjava-sample](https://github.com/Waylenw/AndroidDemo_Waylen/blob/master/rxjava/src/main/java/com/example/rxjava/RxJavaHelper.java)
  
