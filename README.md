@@ -4,7 +4,7 @@ android一些案例，以及博客案例等。<br/>
 - [reclyclerView模块](#reclyclerView模块)
 - [fragmentchang模块](#fragmentchang模块)
 - [imgfitdemo模块](#imgfitdemo模块)
-- [Rxjava模块](#Rxjava模块)
+- [Rxjava模块](#rxjava模块)
 
 
 # reclyclerView模块
