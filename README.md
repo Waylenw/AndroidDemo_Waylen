@@ -20,7 +20,7 @@ android一些案例，以及博客案例等。<br/>
 # imgfitdemo模块
  图片拉伸适配<br>
  [Blog链接](http://waylenw.github.io/Android/android-fit-screen-img/)<br/>
-  
+ 
 # Rxjava模块
  [Rxjava-sample](https://github.com/Waylenw/AndroidDemo_Waylen/blob/master/rxjava/src/main/java/com/example/rxjava/RxJavaHelper.java)
  
